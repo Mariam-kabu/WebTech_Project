@@ -1,0 +1,108 @@
+:root{
+  --light : rgb(221, 255, 244);
+  --rotatez: 0deg;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: url(../visual_materials/space-stars.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+}
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 10px;
+  backdrop-filter: blur(3px);
+}
+.header{
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--light);
+}
+.logo{
+  font: bold 30px/40px 'Helvetica Neue';
+  color: var(--light);
+}
+.logo span{
+  color: aqua;
+}
+ul{
+  display: flex;
+}
+li{
+  border-bottom: 1.5px solid rgba(0, 255, 255, 0);
+  padding: 20px;
+}
+li:hover{
+  border-bottom: 2px solid aqua;
+}
+li:not(li:last-child){
+  margin-right: 40px;
+}
+.nav-a{
+  font: bold 20px/30px 'Helvetica Neue';
+  color: var(--light);
+  text-transform: capitalize;
+  padding: 20px 0;
+}
+.nav-a:hover{
+  color: aqua;
+}
+main{
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* planets */
+#planets{
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sub-header{
+  font: bold 28px/40px 'Helvetica Neue';
+  color: var(--light);
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.planets-slider{
+  display: flex;
+  width: 90%;
+  overflow-x: scroll;
+}
+.planets-slider::-webkit-scrollbar{
+  display: unset;
+}
+.planets-slider div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.planet-name{
+  font: bold 22px/40px 'Helvetica Neue';
+  color: var(--light);
+  text-transform: capitalize;
+}
+.planet{
+  width: 240px;
+}
+
+/* moon */
+#moon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
