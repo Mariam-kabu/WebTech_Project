@@ -1,0 +1,31 @@
+@media (max-width: 768px){
+    .header{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+    ul{
+        text-align: center;
+        flex-direction: column;
+    }
+    li:not(li:last-child){
+        margin-right: unset;
+    }
+    .burger-bar{
+        display: block;
+    }
+    #planets{
+        margin: 60px auto;
+    }
+    .moon {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #trailer {
+        grid-template: 200px 200px 200px 200px / 1fr;
+    }
+    form{
+        width: 90%;
+    }
+}

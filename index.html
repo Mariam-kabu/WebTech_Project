@@ -19,51 +19,25 @@
             <div class="logo-div">
                 <h1><a href="index.html" class="logo">space <span>edu</span></a></h1>
             </div>
-            <div class="navigation">
+            <div class="navigation" id="nav">
                 <nav>
                     <ul>
                         <li><a class="nav-a" href="#planets">planets</a></li>
                         <li><a class="nav-a" href="#moon">moon</a></li>
                         <li><a class="nav-a" href="#trailer">trailer</a></li>
-                        <li><a class="nav-a" href="#tickets">tickets</a></li>
-                        <li><a class="nav-a" href="#blog">blog</a></li>
+                        <li><a class="nav-a" href="#contact">contact</a></li>
                     </ul>
                 </nav>
+            </div>
+            <div class="burger-bar" id="burger">
+                <div class="bar stick1"></div>
+                <div class="bar stick2"></div>
+                <div class="bar stick3"></div>
             </div>
         </div>
 
     </header>
     <main>
-        <!-- <section class="planets">
-            <div class="container">
-                <div class="element active">
-                    <img class="planet" src="visual_materials/18_mercury_new.png" alt="planets">
-                    <div class="box">
-                        <h2>Box Title 1</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus in possimus alias eveniet deleniti cum ipsam. Temporibus quisquam, ipsam accusamus rerum voluptatum nesciunt, animi, earum fuga cumque omnis iste placeat.</p>
-                    </div>
-                </div>
-                <div class="element ">
-                    <img class="planet" src="visual_materials/18_mercury_new.png" alt="planets">
-                    <div class="box">
-                        <h2>Box Title 2</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus in possimus alias eveniet deleniti cum ipsam. Temporibus quisquam, ipsam accusamus rerum voluptatum nesciunt, animi, earum fuga cumque omnis iste placeat.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, animi, cupiditate eos quae architecto ipsa, porro accusamus modi qui doloremque ex ut ratione eligendi harum enim aspernatur hic asperiores consequuntur.
-                        </p>
-                    </div>
-                </div>
-                <div class="element ">
-                    <img class="planet" src="visual_materials/18_mercury_new.png" alt="planets">
-                    <div class="box">
-                        <h2>Box Title 3</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus in possimus alias eveniet deleniti cum ipsam. Temporibus quisquam, ipsam accusamus rerum voluptatum nesciunt, animi, earum fuga cumque omnis iste placeat.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequatur ipsa fugit. Ipsam nihil dicta quo similique reprehenderit veritatis odio est voluptatibus expedita porro. Explicabo, porro ex. Nisi, provident accusamus.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nostrum expedita est voluptatem animi, non magni veritatis porro repellat? Error, cupiditate repellat. Architecto atque, provident aut laborum tempore modi recusandae.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <section id="planets">
             <h2 class="sub-header">Planets</h2>
             <div class="planets-slider">
@@ -105,7 +79,83 @@
         </section>
         <section id="moon">
             <h2 class="sub-header">moon</h2>
-            <iframe src='https://solarsystem.nasa.gov/gltf_embed/2366' width='80%' height='450px'  />
+            <div class="moon">
+                <iframe src='https://solarsystem.nasa.gov/gltf_embed/2366' width='100%' height='400px'
+                    frameborder="0"></iframe>
+                <fieldset>
+                    <legend>Quick Facts</legend>
+                    <p>
+                        <b>Average Distance from Earth:</b><br>
+                        238,855 miles | 384,400 kilometers
+
+                    </p>
+                    <p>
+                        <b>Orbit and Rotation Period:</b><br>
+                        27.32 Earth Days
+                    </p>
+                    <p>
+                        <b>Equatorial Radius:</b><br>
+                        1,079.6 miles | 1,737.5 kilometers
+                    </p>
+                    <p>
+                        <b>Mass:</b><br>
+                        0.0123 of Earth's (a bit more than 1 percent)
+                    </p>
+                    <p>
+                        <b>Gravity:</b><br>
+                        0.166 of Earth's (If you weigh 100 pounds (45 kilograms) on Earth, you'd weight 16.6 pounds (7.5
+                        kilograms) on the moon)
+                    </p>
+                    <p>
+                        <b>Temperature Range:</b><br>
+                        -414 to 253 degrees Farenheit (-248 to 123 degrees Celsius)
+                    </p>
+                </fieldset>
+            </div>
+        </section>
+        <section id="trailer">
+            <div class="trailer-video">
+                <iframe src="https://www.youtube.com/embed/E9oKEJ1pXPw" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="trailer-video">
+                <iframe src="https://www.youtube.com/embed/FYOH_54XEJY" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="trailer-video">
+                <iframe src="https://www.youtube.com/embed/libKVRa01L8" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="trailer-video">
+                <iframe src="https://www.youtube.com/embed/J4SUdqOntxQ" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="sub-header">Contact Us</h2>
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="E-mail">E-mail</label>
+                <input type="email" name="E-mail" id="E-mail">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write a message..."></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="social-links">                
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
         </section>
     </main>
     <script src="javascript/index.js"></script>

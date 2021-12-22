@@ -1,13 +1,6 @@
-const element = document.querySelectorAll('.element');
-element.forEach(function (el, key) {
-    el.addEventListener('click', function () {
-        el.classList.add("active");
+let toggleButton = document.getElementById('burger');
+let navbarLinks = document.getElementById('nav');
 
-        element.forEach(function (ell, index) {
-            if (key !== index) {
-                ell.classList.remove('active');
-            }
-        });
-    });
-});
-
+toggleButton.addEventListener('click', function(){
+  navbarLinks.classList.toggle('opened');
+})
