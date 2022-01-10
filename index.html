@@ -1,3 +1,7 @@
+<?php
+    include 'dbh.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +15,10 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" type="image/gif" href="visual_materials/logo.png">
     <script src="https://kit.fontawesome.com/1a50acf9c6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        
+    </script>
 </head>
 
 <body>
@@ -76,9 +84,28 @@
                     <span class="planet-name">neptune</span>
                 </div>
             </div>
+            <fieldset id="facts">
+                <legend>Quick Facts</legend>
+                <?php
+                    $sql = "SELECT * FROM facts LIMIT 2";
+                    $result = mysqli_query($conn, $sql);
+                    if (mysqli_num_rows($result) > 0) {
+                        while($row = msqli_fetch_assoc($result)) {
+                            echo "<p>";
+                            echo $row['name'];
+                            echo "<br>";
+                            echo $row['message'];
+                            echo "</p>";
+                        }
+                    }else{
+                        echo "Error";
+                    }
+                ?>
+            </fieldset>
+            <button id="btn">show more info!</button>
         </section>
         <section id="moon">
-            <h2 class="sub-header">moon</h2>
+            <h2 class="sub-header">The Earth's Moon</h2>
             <div class="moon">
                 <iframe src='https://solarsystem.nasa.gov/gltf_embed/2366' width='100%' height='400px'
                     frameborder="0"></iframe>
@@ -150,7 +177,7 @@
                 <textarea id="subject" name="subject" placeholder="Write a message..."></textarea>
                 <button type="submit">Send</button>
             </form>
-            <div class="social-links">                
+            <div class="social-links">
                 <a href="#"><i class="fab fa-facebook-square"></i></a>
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>

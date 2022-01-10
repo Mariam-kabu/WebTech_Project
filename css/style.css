@@ -226,15 +226,15 @@ textarea::placeholder{
   color: var(--light);
 }
 button{
-  margin: 0 auto;
-  width: 100px;
-  height: 40px;
+  margin: 25px auto;
+  padding: 5px 20px;
   border-radius: 6px;
   border: 1px solid var(--light);
   font: 16px/30px 'Helvetica Neue';
   color: var(--light);
   background-color: unset;
 }
+button:hover,
 button:focus{
   border-color: aqua;
   color: aqua;
